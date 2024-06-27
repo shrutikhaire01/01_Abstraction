@@ -1,0 +1,23 @@
+
+public class FullTimeEmployee extends Employee{
+
+	
+	private double monthalySalary;
+	
+	@Override
+	public double calculateSalary() {
+		
+		return monthalySalary;
+	}
+	
+	public FullTimeEmployee(String name,int id,double monthalySalary) {
+		super(name,id);
+		this.monthalySalary=monthalySalary;
+		
+	}
+	
+	
+	
+	
+
+}
