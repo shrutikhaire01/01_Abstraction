@@ -1,0 +1,24 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		System.out.println("Hello Worldd");
+		PayRollSystem p = new PayRollSystem();
+		FullTimeEmployee f = new FullTimeEmployee("vikas", 1, 78766.00);
+		PartTimeEmployee part = new PartTimeEmployee("alx", 2, 40, 100);
+		
+		p.addEmployee(f);
+		p.addEmployee(part);
+		System.out.println("Initial Employee Details: ");
+		p.displayEmployee();
+		
+		System.out.println("After Removing...");
+		p.RemoveEmployee(2);
+		p.displayEmployee();
+		
+		
+		
+
+	}
+
+}
